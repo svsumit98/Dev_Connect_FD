@@ -23,7 +23,9 @@
 - You should not be access other routes without login
 - If token is not present, redirect user to login page
 - Logout Feature
-- Created feedSlice, feed.jsx, build the user card on feed!!
+- Created feedSlice and add in the store, feed.jsx, build the user card on feed!!
+- Created Profile.jsx which uses EditProfile.jsx component
+- Created EditProfile component!!
 
 Body
 NavBar
