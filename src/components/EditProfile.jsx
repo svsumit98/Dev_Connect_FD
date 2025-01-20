@@ -89,8 +89,24 @@ const EditProfile = ({ user }) => {
                   />
                 </label>
                 <label className="form-control w-full max-w-xs my-2">
-                  <div className="label">
-                    <span className="label-text">Gender:</span>
+                  <div className="flex">
+                    <div className="label justify-start">
+                      <span className="label-text">Gender:</span>
+                    </div>
+                    <div className="dropdown">
+                      <div tabIndex={0} className="justify-end my-1.5">
+                        ⓘ
+                      </div>
+                      <div
+                        tabIndex={0}
+                        className="dropdown-content card card-compact bg-primary text-primary-content z-[1] w-64 p-2 shadow"
+                      >
+                        <div className="card-body">
+                          <h3 className="card-title">Hint !</h3>
+                          <p>" Select Gender: male, female, others "</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <input
                     type="text"

@@ -26,6 +26,8 @@
 - Created feedSlice and add in the store, feed.jsx, build the user card on feed!!
 - Created Profile.jsx which uses EditProfile.jsx component
 - Created EditProfile component!!
+- Show Toast Message on save of profile
+- See all my connections
 
 Body
 NavBar
