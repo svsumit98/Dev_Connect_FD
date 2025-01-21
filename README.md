@@ -30,6 +30,7 @@
 - New Page - See all my connections
 - New Page - See all my connection requests
 - Feature - Accept/reject connection requests
+- Send/Ignore the user card from the feed
 
 Body
 NavBar

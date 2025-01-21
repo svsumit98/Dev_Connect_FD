@@ -36,12 +36,12 @@ const Requests = () => {
   }, []);
 
   if (!requests) return;
-  if (requests.length === 0) {
-    return <h1 className="font-bold text-2xl text-center">No Request Found</h1>;
+  if (requests.length <= 0) {
+    return <h1 className="text-center my-2">No Request Found</h1>;
   }
 
   return (
-    <div className="text-center my-10">
+    <div className="text-center my-5">
       <h1 className=" font-bold text-2xl ">Connections Requests</h1>
 
       {requests.map((request) => {
@@ -53,31 +53,31 @@ const Requests = () => {
             key={_id}
             className="m-4 p-4 rounded-lg bg-base-300 w-1/2 mx-auto"
           >
-            <div className="flex justify-between items-center">
-              <div>
+            <div className="flex items-center">
+              <div className="flex">
                 <img
                   alt="photo"
                   className="w-20 h-20 rounded-full"
                   src={photoUrl}
                 />
+                <div className="text-left mx-4 ">
+                  <h2 className="font-bold text-xl">
+                    {firstName + " " + lastName}
+                  </h2>
+                  {age && gender && <p>{age + ", " + gender}</p>}
+                  <p>{about}</p>
+                </div>
               </div>
-              <div className="text-left mx-4 ">
-                <h2 className="font-bold text-xl">
-                  {firstName + " " + lastName}
-                </h2>
-                {age && gender && <p>{age + ", " + gender}</p>}
-                <p>{about}</p>
-              </div>
-              <div>
+              <div className="flex justify-end">
                 <button
                   className="btn btn-outline btn-primary mx-2"
-                  onClick={reviewRequest("rejected", request._id)}
+                  onClick={() => reviewRequest("rejected", request._id)}
                 >
                   Reject
                 </button>
                 <button
                   className="btn btn-outline btn-secondary mx-2"
-                  onClick={reviewRequest("accepted", request._id)}
+                  onClick={() => reviewRequest("accepted", request._id)}
                 >
                   Accept
                 </button>
