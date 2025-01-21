@@ -24,19 +24,21 @@ const Connections = () => {
 
   if (!connections) return;
   if (connections.length === 0) {
-    return <h1 className="font-bold text-2xl">No Connection Found</h1>;
+    return (
+      <h1 className="font-bold text-2xl text-center">No Connection Found</h1>
+    );
   }
   return (
     <div className="text-center my-10">
       <h1 className=" font-bold text-2xl ">Connections</h1>
 
       {connections.map((connection) => {
-        const { firstName, lastName, age, gender, photoUrl, about } =
+        const { _id, firstName, lastName, age, gender, photoUrl, about } =
           connection;
 
         return (
           <div
-            key={connection.id}
+            key={_id}
             className="flex m-4 p-4 rounded-lg bg-base-300 w-1/2 mx-auto"
           >
             <div>

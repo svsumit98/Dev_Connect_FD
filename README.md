@@ -27,7 +27,9 @@
 - Created Profile.jsx which uses EditProfile.jsx component
 - Created EditProfile component!!
 - Show Toast Message on save of profile
-- See all my connections
+- New Page - See all my connections
+- New Page - See all my connection requests
+- Feature - Accept/reject connection requests
 
 Body
 NavBar
